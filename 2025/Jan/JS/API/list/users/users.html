@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        *{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            margin:0 0 10px 0;
+            font-size: 24px;
+            color:aliceblue;
+        }
+        input {
+            padding: 5px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .search_block{
+            margin: auto auto;
+            width: fit-content;
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+            width:50%;
+            margin: 0 auto;
+        }
+        .list-group-item{
+            color:aliceblue;
+            margin-top: 20px;
+        }
+
+
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="search_block">
+    <h1>List of users</h1>
+    <input type="text" id="filter" placeholder="User name">
+</div>
+<div id="list">
+    
+</div>
+
+</body>
+</html>
