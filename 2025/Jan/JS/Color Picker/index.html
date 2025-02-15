@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Расположим элементы вертикально */
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+            gap: 20px; /* Добавим отступ между элементами */
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: rgb(215, 215, 255);
+            color:rgb(29, 29, 29)
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+    <div class="container">
+        <h1>Color Picker 🎨</h1>
+        <p id="place">#FFFFFF</p>
+        <button id="changeColor">Change Color</button>
+    </div>
+</body>
+</html>
